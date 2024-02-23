@@ -77,3 +77,4 @@ function secondaryVal(getArr){
 console.log(secondaryVal(myNewArr))
 console.log(secondaryVal([100,200,300,400,500]));
 
+
