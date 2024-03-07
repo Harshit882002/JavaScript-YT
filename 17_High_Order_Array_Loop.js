@@ -17,7 +17,7 @@ for (const hero of Hero) {
     console.log(`Each char is ${hero}`)
 }
 
-// Maps :- 
+// Maps :
 
 const map = new Map()
 map.set('IN', "India");
@@ -30,6 +30,7 @@ map.set('IN', "India");
 console.log(map)
 
 for (const key of map) {
+    
     console.log(key)
 }
 
