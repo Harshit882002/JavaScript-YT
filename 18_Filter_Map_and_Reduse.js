@@ -50,3 +50,67 @@ const userBooks1 = books.filter((book) => {    return book.publish >= 1995 && bo
   console.log(userBooks1)
 
 //----------------Map-------------------------
+
+
+const myNumbers = [1,2,3,4,5,6,7,8,9,10];
+
+const newNum = myNumbers.map((num) => num + 10)
+console.log(newNum)
+
+// const newNum = myNumbers.map((num) => { return num + 10})
+// console.log(newNum)
+
+const newNum1 = myNumbers
+                .map((num) => num * 10)
+                .map((num) => num + 1)
+                .map((num) => {return num + 100})
+                .filter((num) => num >= 40)
+
+    console.log(newNum1)
+
+
+//- -------------------Reduse---------------  
+
+const myNums1 = [1,2,3,4,5]
+
+const myTotal = myNums1.reduce(function(acc, currval){
+    console.log(`acc: ${acc} and currval: ${currval} and sum: ${acc + currval}`)
+    return acc + currval
+}, 0)
+
+console.log(myTotal)
+
+const myTotal1 = myNums1.reduce((acc,currVal) => {
+    return acc + currVal
+}, 0)
+console.log(myTotal)
+
+
+const shopCart = [
+    {
+        itemName: "JS Course",
+        price: 3999
+    },
+    {
+        itemName: "React Course",
+        price: 4999
+    },
+    {
+        itemName: "Mobile Development Course",
+        price: 8999
+    },
+    {
+        itemName: "Java Course",
+        price: 5999
+    },
+    {
+        itemName: "MERN Stack Course",
+        price: 20999
+    }
+]
+
+const priceToPay = shopCart.reduce((acc, item) => {
+    return acc + item.price;
+},0)
+
+console.log(priceToPay)
