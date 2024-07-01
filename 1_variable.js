@@ -4,7 +4,6 @@ var accountPassword = "56667";
 accountEmail = "Captain@gmail.com";
 
 console.log(accountId);
-
 console.table([accountId, accountName, accountPassword, accountEmail]);
 
 /*
